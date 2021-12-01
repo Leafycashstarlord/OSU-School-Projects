@@ -1,2 +1,3 @@
-Oregon State University
+# Oregon State University
+
 Intro to Computer Science 1
