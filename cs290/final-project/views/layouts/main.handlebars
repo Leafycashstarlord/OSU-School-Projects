@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+   	<title>TaHaw</title>
+   	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+	<link rel="stylesheet" href=
+	{{#if beaver}}
+		"style.css"
+	{{else}}
+		"style.css"
+	{{/if}}
+	>
+	<script src="index.js" charset="utf=8" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" charset="utf-8" defer></script>  
+	<script src="/rankTemplate.js" charset="utf-8" defer></script>
+	<script src="rankingsTemplate.js" charset="utf-8" defer></script>
+</head>
+
+<body>
+<header class="default_header">
+		<a class="home-link" href="/">
+			<h1 class="site-title">TaHaw</h1>
+		</a>
+</header>
+
+{{{body}}}
+
+{{!<button type="button" id="options_button"><img id="option_image" src="430-4306427_settings-gear-settings-gear-icon-free-hd-png.png" alt="*"></button>
+
+	<div id="modal-backdrop" class="hidden"></div>
+
+	<div id="options_modal" class="hidden">
+		<div class="modal-contents">
+			<div class="modal-header">
+				<h3 class="modal-title">Settings</h3>
+				<button type="button" id="close_modal" class="modal_hide">&times;</button>
+			</div>
+
+			<div class="modal_body">
+
+				<button id="theme-update-button">Change Theme</button>
+
+				<a class="home-link" href="/">
+					<h3 class="to-home">Home Page</h3>
+				</a>
+
+			</div>
+		</div>
+
+	</div>}}
+
+	<footer class="default_footer">
+		<h2 class="footer_note">Authors: Nat Bourassa, Jackson Rollins, and Ryan Smith</h2>
+	</footer>
+</body>
+</html>

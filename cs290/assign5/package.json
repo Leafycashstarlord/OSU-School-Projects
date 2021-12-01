@@ -1,0 +1,28 @@
+{
+  "name": "master-assignment-5",
+  "version": "1.0.0",
+  "description": "Handlebars templating",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "handlebars views/partials/post.handlebars -f public/postTemplate.js",
+    "pretest": "npm run build",
+    "prestart": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cs290-f19/master-assignment-5.git"
+  },
+  "author": "Jackson Rollins <rollijac@oregonstate.edu",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/osu-cs290-f19/master-assignment-5/issues"
+  },
+  "homepage": "https://github.com/osu-cs290-f19/master-assignment-5#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "5.2.0",
+    "handlebars": "^4.7.6"
+  }
+}
