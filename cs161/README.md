@@ -2,4 +2,4 @@
 
 Intro to Computer Science 1
 
-Taken in 2020
+Winter 2020
