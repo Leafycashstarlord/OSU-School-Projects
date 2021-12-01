@@ -1,0 +1,16 @@
+Sort By ID: 
+200922015 Leslie Knope Public_and_Enviromental_Affairs
+200822013 Olivia Dunham Criminal_Justice
+200722013 Walter Bishop General_Sciences
+199922007 C.J. Cregg Political_Science
+199922006 Toby Ziegler Communications
+199922004 Sam Seaborn Law
+199822007 Josh Lyman Law
+Sort By Last Name: 
+Bishop, Walter General_Sciences 200722013
+Cregg, C.J. Political_Science 199922007
+Dunham, Olivia Criminal_Justice 200822013
+Knope, Leslie Public_and_Enviromental_Affairs 200922015
+Lyman, Josh Law 199822007
+Seaborn, Sam Law 199922004
+Ziegler, Toby Communications 199922006
