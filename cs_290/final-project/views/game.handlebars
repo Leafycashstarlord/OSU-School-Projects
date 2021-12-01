@@ -1,0 +1,60 @@
+<main class = "default_main">
+    <div class="page_container" >
+        <div class="instructions">
+            <h2>
+                {{#if ta}}
+                    Instructions for Ta:
+                {{else}}
+                    Instructions for Haw:
+                {{/if}}
+            </h2>
+            <h3>
+                {{#if ta}}
+                    Tap the button as many times as you can in the allotted time.
+                {{else}}
+                    Hold the button for as long as you can.
+                {{/if}}
+             </h3>
+        </div>
+    </div>
+    <div class="page_container">
+        <div class="center">
+            <h1 id="timer"></h1>
+            <button type="button" class="play_game_button"
+
+            {{#if ta}}
+                id="ta_button"
+            {{else}}
+                id="haw_button"
+            {{/if}}
+            
+            ><h2>Click!</h2></button>
+        </div>
+    </div>
+    <div class="page_container">
+        {{#if ta}}
+            {{> rankings taScore}}
+        {{else}}
+            {{> rankings hawScore}}
+        {{/if}}
+    </div>
+</main>
+
+
+
+
+<div id="game-modal-backdrop" class="hidden"></div>
+    
+<div id="game_modal" class="hidden">
+    <div class="modal-contents">
+        <div class="modal-header">
+            <h3 class="modal-title">Score: </h3>
+            <button type="button" id="close_game_modal" class="modal_hide">&times;</button>
+        </div>
+        <div class="score_input_element">
+            <label for="player_name">UserName</label>
+            <input type="text" id="player_name">
+        </div>
+        <button type="button" id="modal_accept" class="modal_hide">Submit</button>
+     </div>
+</div>

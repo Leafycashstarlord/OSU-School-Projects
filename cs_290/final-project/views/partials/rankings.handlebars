@@ -1,0 +1,12 @@
+<div class="rankings">
+	<h3 class="rank_title">Rankings</h3>
+    {{#if ta}}
+        {{#each taData}}
+            {{> rank}}
+        {{/each}}
+    {{else}}
+        {{#each hawData}}
+            {{> rank}}
+        {{/each}}
+    {{/if}}
+</div>
