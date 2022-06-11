@@ -1,0 +1,6 @@
+Training filename: trainingSet.txt
+Test filename: trainingSet.txt
+	Accuracy: %95.59118236472945
+Training filename: trainingSet.txt
+Test filename: testSet.txt
+	Accuracy: %68.81287726358148
