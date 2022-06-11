@@ -1,0 +1,15 @@
+##OpenGL GLIB
+
+Perspective 90
+LookAt 0 0 20  0 0 0  0 10 0
+
+
+Vertex   ellipse.vert
+Fragment ellipse.frag
+Program  Oval				\
+		uAd <.01 .05 .5>	\
+		uBd <.01 .05 .5>	\
+        uTol <0. 0. 1.>						                    
+
+Color 1. 1. 0
+Obj tigerstsL.obj

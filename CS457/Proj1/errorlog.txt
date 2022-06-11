@@ -1,0 +1,4 @@
+
+0(7) : error C7537: OpenGL does not allow 'smooth' after a type specifier
+0(7) : error C7538: OpenGL does not allow 'smooth' after 'uniform'
+

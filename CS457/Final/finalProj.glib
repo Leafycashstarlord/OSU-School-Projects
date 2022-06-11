@@ -1,0 +1,46 @@
+##OpenGL GLIB
+Perspective 70
+LookAt 0 0 3  0 0 0  0 1 0
+
+Vertex		texture.vert
+Fragment	texture.frag
+Program Texture	TexUnit 6
+
+Texture2D  6  nvposx.bmp
+QuadYZ 5. 5. 10 10
+
+Texture2D  6  nvnegx.bmp
+QuadYZ -5. 5. 10
+
+Texture2D  6  nvposy.bmp
+QuadXZ 5. 5. 10 10
+
+Texture2D  6  nvnegy.bmp
+QuadXZ -5. 5. 10 10
+
+Texture2D  6  nvposz.bmp
+QuadXY 5. 5. 10 10
+
+Texture2D  6  nvnegz.bmp
+QuadXY -5. 5. 10 10
+
+CubeMap 6 nvposx.bmp nvnegx.bmp  nvposy.bmp nvnegy.bmp   nvposz.bmp nvnegz.bmp
+
+Texture2D 8 snowflakeNormal.bmp
+Texture2D 9 snowflakeColor.bmp
+
+
+Vertex		finalProj.vert
+Fragment	finalProj.frag
+Program     finalProj                   \
+                uRefractUnit 6          \
+                uReflectUnit 7          \
+                uNormalTex 8            \
+                uColorTex 9             \
+                uPower <1. 1. 10.>      \
+                uRtheta <0. 0. 50.>     \
+                uWhiteMix <0. 0.3 1.>   \
+                uMix <0. 0. 1.>     
+
+Color 1. 1. 0
+QuadXY 1. 1. 10 10

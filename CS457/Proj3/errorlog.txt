@@ -1,0 +1,6 @@
+
+0(28) : error C0000: syntax error, unexpected identifier, expecting '{' at token "vMC"
+0(57) : error C1503: undefined variable "vMC"
+0(61) : error C1503: undefined variable "vMC"
+0(61) : error C1503: undefined variable "vMC"
+

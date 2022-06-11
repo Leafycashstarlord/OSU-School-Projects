@@ -1,0 +1,44 @@
+##OpenGL GLIB
+Perspective 70
+LookAt 0 0 3  0 0 0  0 1 0
+
+Vertex		texture.vert
+Fragment	texture.frag
+Program Texture	TexUnit 6
+
+Texture2D  6  nvposx.bmp
+QuadYZ 5. 5. 10 10
+
+Texture2D  6  nvnegx.bmp
+QuadYZ -5. 5. 10
+
+Texture2D  6  nvposy.bmp
+QuadXZ 5. 5. 10 10
+
+Texture2D  6  nvnegy.bmp
+QuadXZ -5. 5. 10 10
+
+Texture2D  6  nvposz.bmp
+QuadXY 5. 5. 10 10
+
+Texture2D  6  nvnegz.bmp
+QuadXY -5. 5. 10 10
+
+CubeMap 6 nvposx.bmp nvnegx.bmp  nvposy.bmp nvnegy.bmp   nvposz.bmp nvnegz.bmp
+
+
+Vertex		projsix.vert
+Fragment	projsix.frag
+Program    	ProjSix							\
+           	uReflectUnit 6             		\
+        	uNoiseAmp <0. 0. 10.>			\
+        	uNoiseFreq <0.0 1 50>		\
+			uKa <0. 0.3 1.0>                \
+            uKd <0. 0.6 1.0>                \
+            uKs <0. 0.3 1.0>                \
+            uKr <0. 0.5 1.0>                \
+			uColor {0. 1. 0.}				\
+			uSpecularColor {1. 1. 1. 1.}
+
+Color 1. 0. 0.
+Obj tigerstsM.obj

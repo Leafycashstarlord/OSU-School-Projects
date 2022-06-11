@@ -1,0 +1,16 @@
+
+0(46) : warning C7022: unrecognized profile specifier "vNs"
+0(46) : error C0000: syntax error, unexpected identifier, expecting '(' at token "Eye"
+0(51) : error C1503: undefined variable "nvx"
+0(51) : error C1503: undefined variable "nvx"
+0(51) : error C1503: undefined variable "nvx"
+0(51) : error C1503: undefined variable "nvx"
+0(59) : error C1503: undefined variable "Normal"
+0(59) : error C1503: undefined variable "Normal"
+0(60) : error C1503: undefined variable "Normal"
+0(60) : error C1503: undefined variable "Normal"
+0(62) : error C1503: undefined variable "Eye"
+0(62) : error C1503: undefined variable "Normal"
+0(65) : error C1503: undefined variable "Eye"
+0(65) : error C1503: undefined variable "Normal"
+

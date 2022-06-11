@@ -1,0 +1,5 @@
+
+0(63) : error C7011: implicit cast from "float" to "vec4"
+0(66) : error C7011: implicit cast from "float" to "vec4"
+0(75) : error C7011: implicit cast from "float" to "vec4"
+
