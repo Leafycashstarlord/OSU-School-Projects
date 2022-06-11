@@ -1,0 +1,6 @@
+Peak Performance =   312.37 MegaMults/Sec
+Average Performance =   292.72 MegaMults/Sec
+Peak Performance =  1020.87 MegaMults/Sec
+Average Performance =   945.02 MegaMults/Sec
+Speedup is 3.268171 from 1 to 4 threads
+Parallel fraction is 0.925358
