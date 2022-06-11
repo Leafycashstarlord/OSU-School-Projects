@@ -1,0 +1,49 @@
+
+[1m[37m== CS344 Program 5 Grading Script ==(B[m
+
+[38m- killing any running servers (ignore not permitted errors)
+[38m- removing tempfiles
+[38m- starting servers
+[38m- generating key20
+[37mdoes key20 exist? [34m(5 pts)
+[32m  PASS
+[37mis length of key20 21? [34m(5 pts)
+[32m  PASS
+[38m- generating key70000
+[37mis size of key70000 70001? [34m(5 pts)
+[32m  PASS
+[37merror given about short key? [34m(10 pts)
+(B[mCLIENT: ERROR key too small: Success
+[32m  PASS
+[37mreturns encrypted text? [33mDouble check manually! [34m(20 pts)
+[34mNKU=UDW2DBH H.TKXIX@LS>PBO YWSU:FJPG
+[32m  PASS
+[38m- creating ciphertext1 file
+[37mdoes ciphertext1 exist? [34m(10 pts)
+[32m  PASS
+[37mis size of ciphertext1 same as plaintext1? [34m(10 pts)
+[32m  PASS
+[37mdoes ciphertext1 look encrypted? [33mDouble check manually! [34m(5 pts)
+[34mNKU=UDW2DBH H.TKXIX@LS>PBO YWSU:FJPG
+[32m  PASS
+[37mdec -> enc invalid connection reported? [34m(5 pts)
+(B[mCLIENT: ERROR wrong server: Success
+[31m  FAIL: no error thrown
+[37mdoes decrypted message match source? [34m(20 pts)
+[36mOriginal : THE RED GOOSE FLIES AT MIDNIGHT STOP
+[34mDecrypted: HNJ?XCODAPAHK<GJLMBEWRASVZMNLCVTT QY
+[31m  FAIL: output does not match
+[38m- decrypting ciphertext1 to plaintext1_a
+[37mdoes plaintext1_a exist? [34m(10 pts)
+[32m  PASS
+[37mdoes decrypted message file match source? [34m(5 pts)
+[31m  FAIL: output does not match
+[38m- testing concurrent encyption
+[37mis error reported for fail input plaintext5? [34m(5 pts)
+(B[mCLIENT: ERROR invalid plaintext: Success
+[32m  PASS
+[38m- waiting for programs to complete
+[37mare correct ciphertexts generated with concurrent encryption? [34m(20 pts)
+[32m  PASS
+[38m- testing concurrent decryption
+[38m- waiting for programs to complete

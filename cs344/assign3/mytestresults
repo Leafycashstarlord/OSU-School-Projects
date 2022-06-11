@@ -1,0 +1,111 @@
+PRE-SCRIPT INFO
+  Grading Script PID: 55997
+  Note: your smallsh will report a different PID when evaluating $$
+:  echo BEGINNING TEST SCRIPT is not a valid command
+: 
+:  echo -------------------- is not a valid command
+:  echo Using comment (5 points if only next prompt is displayed next) is not a valid command
+: : 
+: 
+:  echo -------------------- is not a valid command
+:  echo ls (10 points for returning dir contents) is not a valid command
+: junk
+junk2
+Makefile
+mytestresults
+p3testscript
+p3testscript-improved.sh
+README.txt
+smallsh
+smallsh.c
+: 
+: 
+:  echo -------------------- is not a valid command
+:  echo ls out junk is not a valid command
+:  ls > junk is not a valid command
+: 
+: 
+:  echo -------------------- is not a valid command
+:  echo cat junk (15 points for correctly returning contents of junk) is not a valid command
+:  cat junk is not a valid command
+: 
+: 
+:  echo -------------------- is not a valid command
+:  echo wc in junk (15 points for returning correct numbers from wc) is not a valid command
+:  wc < junk is not a valid command
+: 
+: 
+:  echo -------------------- is not a valid command
+:  echo wc in junk out junk2; cat junk2 (10 points for returning correct numbers from wc) is not a valid command
+:  wc < junk > junk2 is not a valid command
+:  cat junk2 is not a valid command
+: 
+: 
+:  echo -------------------- is not a valid command
+:  echo test -f badfile (10 points for returning error value of 1, note extraneous &) is not a valid command
+:  test -f badfile is not a valid command
+:  status & is not a valid command
+: 
+: 
+:  echo -------------------- is not a valid command
+:  echo wc in badfile (10 points for returning text error) is not a valid command
+:  wc < badfile is not a valid command
+: 
+: 
+:  echo -------------------- is not a valid command
+:  echo badfile (10 points for returning text error) is not a valid command
+:  badfile is not a valid command
+: 
+: 
+:  echo -------------------- is not a valid command
+:  echo sleep 100 background (10 points for returning process ID of sleeper) is not a valid command
+:  sleep 100 & is not a valid command
+: 
+: 
+:  echo -------------------- is not a valid command
+:  echo pkill -signal SIGTERM sleep (10 points for pid of killed process, 10 points for signal) is not a valid command
+:  echo (Ignore message about Operation Not Permitted) is not a valid command
+:  pkill sleep is not a valid command
+: 
+: 
+:  echo -------------------- is not a valid command
+:  echo sleep 1 background (10 pts for pid of bg ps when done, 10 for exit value) is not a valid command
+:  sleep 1 & is not a valid command
+:  sleep 1 is not a valid command
+: 
+: 
+:  echo -------------------- is not a valid command
+:  echo pwd is not a valid command
+: /nfs/stak/users/rollijac/cs_344/assign3
+: 
+: 
+:  echo -------------------- is not a valid command
+:  echo cd is not a valid command
+: : 
+: 
+:  echo -------------------- is not a valid command
+:  echo pwd (10 points for being in the HOME dir) is not a valid command
+: /nfs/stak/users/rollijac
+: 
+: 
+:  echo -------------------- is not a valid command
+:  -1 is not a valid command
+:  -1 is not a valid command
+: 
+: 
+:  echo -------------------- is not a valid command
+:  -1 is not a valid command
+:  -1 is not a valid command
+: 
+: 
+:  echo -------------------- is not a valid command
+:  echo pwd (5 points for being in the newly created dir) is not a valid command
+: /nfs/stak/users/rollijac
+:  echo -------------------- is not a valid command
+:  echo Testing foreground-only mode (20 points for entry & exit text AND ~5 seconds between times) is not a valid command
+:  -1 is not a valid command
+: Thu Feb 10 17:54:50 PST 2022
+:  sleep 5 & is not a valid command
+: Thu Feb 10 17:54:50 PST 2022
+:  -1 is not a valid command
+: 
