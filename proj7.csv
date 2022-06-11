@@ -1,6 +1,0 @@
-1 processors,    8388608 elements,    334.68 mega-autocorrelations computed per second
-2 processors,    8388608 elements,    691.39 mega-autocorrelations computed per second
-4 processors,    8388608 elements,   1365.69 mega-autocorrelations computed per second
-8 processors,    8388608 elements,   2591.05 mega-autocorrelations computed per second
-16 processors,    8388608 elements,   4798.84 mega-autocorrelations computed per second
-32 processors,    8388608 elements,   6797.48 mega-autocorrelations computed per second
