@@ -1,4 +1,4 @@
-# School-Projects
+# OSU-School-Projects
 
 All of the work I have done in my undergrad at Oregon State University.
 
