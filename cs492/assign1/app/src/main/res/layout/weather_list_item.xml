@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/weather_date"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="8dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/weather_low"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="10dp"
+        android:textStyle="bold"
+        android:textColor="#00008A"/>
+
+    <TextView
+        android:id="@+id/weather_high"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="10dp"
+        android:textStyle="bold"
+        android:textColor="#A50000"/>
+
+    <TextView
+        android:id="@+id/weather_precip"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content":w
+        android:paddingEnd="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"/>
+
+    <TextView
+        android:id="@+id/weather_short"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

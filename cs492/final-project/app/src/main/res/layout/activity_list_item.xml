@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/activity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textAppearance="?attr/textAppearanceHeadline6"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/learn_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="4sp"
+                android:text="Learn More 📖"
+                app:shapeAppearanceOverlay="@style/Button"
+                app:backgroundTint="#F5B041"/>
+
+            <Button
+                android:id="@+id/bookmark"
+                android:layout_width="139dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="4sp"
+                app:shapeAppearanceOverlay="@style/Button"
+                android:text="Bookmark 🔖"
+                app:backgroundTint="#5DADE2"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
