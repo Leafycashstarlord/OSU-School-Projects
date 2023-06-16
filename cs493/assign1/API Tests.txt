@@ -1,0 +1,100 @@
+BUSINESS COMMANDS
+
+curl --request GET \
+  --url 'http://localhost:8000/data/business?page=1'
+curl --request GET \
+  --url 'http://localhost:8000/data/business/3?page=1'
+curl --request PUT \
+  --url 'http://localhost:8000/data/business/1?page=1' \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"ownerid": "0",
+	"name": "Block 15",
+	"address": "300 Main Street",
+	"city": "portland",
+	"state": "OR",
+	"zip": "97333",
+	"phone": "541-758-2077",
+	"category": "Restaurant",
+	"subcategory": "Brewpub",
+	"website": "http://block15.com"
+}'
+curl --request DELETE \
+  --url 'http://localhost:8000/data/business/2?page=1'
+curl --request POST \
+  --url 'http://localhost:8000/data/business?page=1' \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"name": "New Business",
+	"address": "100 Main Street",
+	"city": "portland",
+	"state": "OR",
+	"zip": "97333",
+	"phone": "123-456-7890",
+	"category": "Shopping",
+	"subcategory": "Video Games"
+}'
+
+REVIEW COMMANDS
+
+curl --request POST \
+  --url http://localhost:8000/data/reviews \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"businessid": "1",
+	"dollars": "2",
+	"stars": "3",
+	"review": "notwworth the price"
+}'
+curl --request PUT \
+  --url http://localhost:8000/data/reviews/1 \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"userid": "7",
+	"businessid": "8",
+	"dollars": "2",
+	"stars": "4.5",
+	"review": "Cheap, Delicious Fod"
+}'
+curl --request DELETE \
+  --url http://localhost:8000/data/reviews/2
+
+PHOTO COMMANDS
+
+curl --request POST \
+  --url http://localhost:8000/data/photos \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"businessid": "1",
+	"caption": "yumy food"
+}'
+curl --request PUT \
+  --url 'http://localhost:8000/data/photos/0?page=1' \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"userid": "7",
+	"caption": "this is mygrub"
+}'
+curl --request DELETE \
+  --url http://localhost:8000/data/photos/3
+
+RETRIEVE YOUR OWN BUSINESSES/REVIEWS/PHOTOS COMMANDS
+
+curl --request GET \
+  --url http://localhost:8000/data/business \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"ownerid": "0"
+}'
+curl --request GET \
+  --url http://localhost:8000/data/reviews \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"userid": "25"
+}'
+curl --request GET \
+  --url http://localhost:8000/data/photos \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"userid": "6"
+}'
